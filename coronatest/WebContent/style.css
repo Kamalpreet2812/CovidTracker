@@ -1,0 +1,134 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+     box-shadow: 2px 8px 6px -6px black;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+button{
+    float:right;
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 55px;
+    max-height:300px;
+    box-shadow: 2px 8px 6px -6px black;
+}
+.carousel-item img{
+    text-align: center;
+    min-height:300px;
+    max-height:300px; 
+}
+#confirmedcases,#newconfirmedcases{
+    background: #fff5f5;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#confirmedcasesfooter{
+    background: #fed7d7;
+    text-align: center;
+    color: red;
+}
+#recoveredcases,#newrecoveredcases{
+    background: #f0fff4;
+    text-align: center;
+    color: green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#recoveredcasesfooter{
+    background: #c6f6d5;
+    color: green;
+    text-align: center;
+}
+#deathcases,#newdeathcases{
+    background: #edf2f7;
+    text-align: center;
+    color: gray;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#deathcasesfooter{
+    background: #e2e8f0;
+    color: gray;
+    text-align: center;
+}
+
+.boxShadow{
+        box-shadow: 2px 8px 6px -6px black;
+}
+.blink {
+    color: red;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {opacity: 0;}
+}
+#country {
+   height:50px !important;
+   max-height:80px !important;
+   overflow-y:auto;
+}
+#table{ 
+    width: 100%; 
+    border-spacing: 0; 
+    box-shadow: 10px 10px 8px -6px #888888;
+}       
+tbody, thead { 
+    display: block; 
+}                
+tbody {   
+    height: 950px;  
+    overflow-y: auto; 
+    border-top: 2px solid white; 
+}  
+tbody::-webkit-scrollbar{
+    display: none;
+}       
+tbody td, thead th { 
+    width : 50%; 
+    border-right: 2px solid white; 
+} 
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+iframe{
+    height:700px;
+    width:100%;
+    box-shadow: 10px 10px 8px -6px #888888;
+
+}
+#lineChart{
+    display: none;
+}
+.newsimg{
+    height: 100%;
+    width: 100%; 
+    margin: auto;
+}
+.footer {
+   /* position: fixed; */
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: blueviolet;
+   color: white;
+   text-align: center;
+}
